@@ -2,19 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sumateeeee</title>
-    
-    <p><b>Galeria de arte</b></p>
-    <a href="noticias.html">Noticias</a>
-    <a href="artistas.html">Artistas</a>
-    <a href="galeria.html">Galeria</a>
-    <a href="aliados.html">Aliados</a>
-    <a href="sumate.html">Sumate</a>
-    <p>¿Quiénes somos?</p>
-    
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Arte Web</title>
+    <link rel="stylesheet" href="../tpo_codoacodo/CSS/sumate.css">
+    <link rel="stylesheet" href="../tpo_codoacodo/CSS/fonts.css">
+
+
 </head>
 <body>
+<header >
 
+    <h1 class="tituloPagina">Galeria de Arte Web</h1>
+</header>
+<div class="barraGeneral">
+
+    <div class="opcionesBarraGeneral"><a href="noticias.html" class="textoOpcionesBarraGeneral">Noticias</a></div>
+    <div class="opcionesBarraGeneral"><a href="artistas.html" class="textoOpcionesBarraGeneral">Artistas</a></div>    
+    <div class="opcionesBarraGeneral"><a href="galeria.html" class="textoOpcionesBarraGeneral">Galeria</a></div>
+    <div class="opcionesBarraGeneral"><a href="aliados.html" class="textoOpcionesBarraGeneral">Aliados</a></div>
+    <div class="opcionesBarraGeneral"><a href="../HTML/Sumate.html" class="textoOpcionesBarraGeneral">Sumate</a></div>
+
+</div>
+
+
+
+
+<form name="formulario" method="get" action="procesar.php">
+    <div> <label>Nombre: <input type="text" name="nombre" placeholder="Ej: Pedro" required minlength="2" maxlength="15"></label></div>
+    <div> <label>Apellido: <input type="text" name="nombre" placeholder="Ej: Gomez"  required minlength="2" maxlength="15"></label></div>
+    <div><label>Fecha de nacimiento: <input type="date" name="edad" class="numerosEdad" required ></label></div>
+    <div><label>Correo: <input type="email" name="correo" placeholder="Ej: Pedro@mail.com" required ></label></div>
+    <div> <label>Teléfono: <input type="tel" name="telefono" required ></label></div>
+    <div><label>Sitio Web: <input type="url" name="sitioweb" placeholder="Ej: www.Pedro.com"></label></div>
+    <input type="file" required>
+    <div><label class="terminos" >Acepto los terminos y condiciones <input type="checkbox" class="checkForm" required ></label></div>
+    <div><input type="submit" value="Enviar"></div>
+    </form>
+
+
+
+
+
+
+
+<footer>
+    <p>
+
+        Nuestras oficinas:Bermúdez 2651, B1417 Cdad. Autónoma de Buenos Aires
+                  
+        Telefono: 011 4566-9569
+
+    </p>
+
+
+</footer>
 </body>
 </html>
